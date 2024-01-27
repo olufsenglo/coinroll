@@ -105,7 +105,8 @@ body {
 }
 
 .nav-right .profil p {
-    padding-left: 5px;
+    font-size: 0.8rem;
+    margin-right: 4px;
 }
 
 .nav-right .profil i {
@@ -625,10 +626,157 @@ body {
 
 .copyright {
     text-align: center;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 .copyright p {
     font-size: .8rem;
     color: #ccc;
+}
+
+/* Responsive Web */
+@media (max-width:769px) {
+    .side-bar {
+        max-width: 0px;
+        width: 8%;
+        padding-left: 5px;
+        height: 300vh;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    .side-bar.open {
+        visibility: visible;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+    .container {
+        display: block;
+        margin-right: 6rem;
+    }
+
+    .main-container {
+        display: block;
+    }
+
+    .large-container {
+        flex-basis: 90%;
+    }
+
+    .side-container {
+        flex-basis: 90%;
+        padding-right: 0;
+    }
+
+    .our-nav {
+        position: sticky;
+        margin-right: 5rem;
+    }
+
+    .nft-text {
+        padding-left: 20px;
+    }
+
+    .show-side-bar {
+        display: flex;
+    }
+
+    .our-footer {
+        display: block;
+    }
+
+    .our-footer .about, .our-footer .social-media, .our-footer .contact-us, .our-footer .useful-link {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:605px) {
+    .nav-left {
+        display: none;
+    }
+}
+
+@media (max-width:376px) {
+    .nav-middle .amount-eth p {
+        font-size: .8rem;
+    }
+
+    .notif i {
+        font-size: .8rem;
+    }
+
+    .nav-right .profil img {
+        width: 20px;
+    }
+
+    .nav-right .profil p {
+        font-size: .8rem;
+    }
+
+    .our-nav {
+        margin-right: 1rem;
+    }
+
+    .container {
+        margin-right: 1rem;
+        padding-left: 7px;
+    }
+
+    .logo img {
+        width: 25px;
+    }
+
+    .shorcut-links a {
+        font-size: .8rem;
+    }
+
+    .side-container {
+        margin-left: 15px;
+    }
+
+    .current-bid p {
+        font-size: .7rem;
+    }
+
+    .current-bid h1 {
+        font-size: 1.2rem;
+    }
+
+    .sale-detail p {
+        font-size: .7rem;
+    }
+
+    .sale-detail h1 {
+        font-size: 1.2rem;
+    }
+
+    .sale-detail {
+        padding-left: 1rem;
+    }
+
+    .option-nft .button-1 button {
+        padding: 10px 18px;
+    }
+
+    .option-nft .button-2 button {
+        padding: 10px 18px;
+    }
+
+    .option-nft .button-1 {
+        padding-left: 1rem;
+    }
+
+    .option-nft .button-2 {
+        padding-left: 1rem;
+    }
+
+    .activity-button button {
+        padding: 8px 118px;
+    }
+
 }
